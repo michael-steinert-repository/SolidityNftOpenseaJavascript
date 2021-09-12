@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vanilla Boilerplate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">NFT Manager</h1>
+    </div>
+    <div class="container">
+        <div class="row" id="app">
+            <div class="col col-md-12">
+                <div>
+                    <label>Token ID</label>
+                    <input id="tokenIdInput" type="number">
+                </div>
+                <div>
+                    <label>Amount</label>
+                    <input id="amountInput" type="number">
+                </div>
+                <div>
+                    <label>Address</label>
+                    <input id="addressInput" type="text">
+                </div>
+                <div>
+                    <button class="btn btn-primary" id="submitMint">
+                        Mint
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="contractAbi.js"/>
+    <script type="text/javascript" src="mint.js"/>
+</body>
+</html>
